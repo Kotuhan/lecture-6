@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!-- Complete guide for flexbox -->
+<!-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->
+
 <html>
     <head>
         <style>
@@ -10,38 +13,20 @@
                 margin: 0 auto;
             }
             .container .list {
-                margin: 0 auto;
-                padding: 0;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
             }
             .container .list li,
-            .container .list div {
-                display: inline-block;
+            .container .list > div {
+                height: 50px;
+                background-color: azure
             }
             
         </style>
     </head>
     <body>
         <div class="container">
-            <ul class="list">
-                <li>
-                    <div></div>
-                    <span>IntelliSens</span>
-                </li>
-                <li>
-                    <div></div>
-                    <span>Debugging</span>
-                </li>
-                <li>
-                    <div></div>
-                    <span>Build-in Git</span>
-                </li>
-                <li>
-                    <div></div>     
-                    <span>Extensions</span>
-                </li>
-            </ul>
-        </div>
-        <!-- <div class="container">
                 <div class="list">
                     <div>
                         <div></div>
@@ -55,11 +40,11 @@
                         <div></div>
                         <span>Build-in Git</span>
                     </div>
-                    <div>
+                    <div onclick="alert('https://css-tricks.com/snippets/css/a-guide-to-flexbox/')">
                         <div></div>     
                         <span>Extensions</span>
                     </div>
                 </div>
-            </div> -->
+            </div>
     </body>
 </html>
